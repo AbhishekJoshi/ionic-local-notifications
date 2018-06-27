@@ -27,10 +27,6 @@ export class HomePage {
       text: 'every minute ',
       trigger: { every: 'minute' },
       foreground: true,
-    }).then(res => {
-      console.log('Scheduled! ', res);
-    }).catch(err => {
-      console.error('Error scheduling', err);
     });
   }
 

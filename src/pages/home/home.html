@@ -7,11 +7,20 @@
 </ion-header>
 
 <ion-content padding>
-  Hit the button and it will schedule a repeating notification, every minute for 5 minutes
+  Hit the buttons
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
 
 
-  <button ion-button (click)="doRepeatSchedule()">Schedule Repeating Notification</button>
+  <button ion-button (click)="getSchedule()">Get and Log Schedules and Notifications in Console</button>
+  <br /> <br/>
+  <button ion-button (click)="clearSchedule300()">Clear All Notifications</button>
+  <button ion-button (click)="clearSchedule300()">Clear ID 300</button>
+  <button ion-button (click)="createSingleNotification()">Create Single Notification</button>
+  <button ion-button (click)="createID300()">Create Single Notification with ID 300</button>
+  <button ion-button (click)="createID400()">Create Single Notification with ID 400</button>
+  <button ion-button (click)="doRepeatSchedule()">Schedule Repeating Notification (1 per minute)</button>
+  <button ion-button (click)="createInTwoMinutes()">Create Notification 2minutes from now</button>
+
 </ion-content>
